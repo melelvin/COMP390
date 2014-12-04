@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3649F7FA-EEEC-44CF-A7D3-EA0A16AC4448</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TME_1_2DGraphics_1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B343F7DEB7E5CF5B1CF8189C1FF34065B67B9F4</key>
+		<string>https://github.com/melelvin/COMP390.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TME_1_2DGraphics/TME_1_2DGraphics_1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B343F7DEB7E5CF5B1CF8189C1FF34065B67B9F4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/melelvin/COMP390.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B343F7DEB7E5CF5B1CF8189C1FF34065B67B9F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B343F7DEB7E5CF5B1CF8189C1FF34065B67B9F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>COMP390</string>
+		</dict>
+	</array>
+</dict>
+</plist>

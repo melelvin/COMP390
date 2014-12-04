@@ -1,25 +1,45 @@
 //
 //  display.h
-//  TME_1_2DGraphics
+//  TME_1_2DGraphics_1
 //
-//  Created by Mel Mirasol on 2014-11-28.
+//  Created by Mel Mirasol on 2014-12-02.
 //  Copyright (c) 2014 Mel Mirasol. All rights reserved.
 //
 
-#ifndef __TME_1_2DGraphics_1__display__
-#define __TME_1_2DGraphics_1__display__
+// Required to identify if platform is Windows
+#ifdef WIN32
+#include <windows.h>
+#endif
 
-#include <string>
+// Required to identify if platform is OSX
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
+#include <GL/glut.h>
+#include <GL/glu.h>
+#include <GL/gl.h>
+#endif
 
-using namespace std;
+#ifndef TME_1_2DGraphics_1_display_h
+#define TME_1_2DGraphics_1_display_h
 
-class Display {
-public:
-    Display(int width, int height, const std::string& title);
-    virtual ~Display();
-protected:
-private:
-    Display(const Display& other) {}
-};
+void initializeDisplay(int width, int height, std::string title) {
+    
+    const char *c_title = title.c_str();
+    
+    glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH) ;
+    // Center the window to the screen, just for aesthetic purposes.
+    glutInitWindowPosition((glutGet(GLUT_SCREEN_WIDTH)-width)/2,
+                           (glutGet(GLUT_SCREEN_HEIGHT)-height)/2);
+    
+    glutInitWindowSize (width, height); // Set display-window width and height.
+    
+    int windowHandle = glutCreateWindow (c_title); // Create display window.
+    glutSetWindow(windowHandle);
+    
+    glClearColor (1.0, 1.0, 1.0, 0.0); // Set display-window color to white.
+}
 
 #endif
